@@ -6,7 +6,7 @@ class TitleScreen extends React.Component {
       <div>
         <div>
           <h2>Trivia!</h2>
-          <button onClick={this.props.startGame}>Start Game!</button>
+          <button onClick={this.props.startGame} >Start Game!</button>
         </div>
       </div>
     )
