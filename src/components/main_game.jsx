@@ -4,10 +4,6 @@ import { connect } from 'react-redux'
 import TitleScreen from './title_screen'
 import { startGame } from '../actions/ui_actions'
 
-import Axios from 'axios'
-Axios.get('https://opentdb.com/api.php?amount=10&type=multiple')
-  .then(res => console.log(res.data.results))
-
 class Game extends React.Component {
   // constructor (props) {
   //   super(props)
