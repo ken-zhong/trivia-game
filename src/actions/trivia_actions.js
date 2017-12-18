@@ -8,6 +8,6 @@ const receiveNewQuestions = questions => ({
 })
 
 export const fetchNewQuestions = () => dispatch => {
-  Axios.get('https://opentdb.com/api.php?amount=10&type=multiple')
+  return Axios.get('https://opentdb.com/api.php?amount=10&type=multiple')
   .then(res => dispatch(receiveNewQuestions(res.data.results)))
 }

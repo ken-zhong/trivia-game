@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import TitleScreen from './title_screen'
+import SinglePlayerGame from './single_player_game/single_player_container'
 import { startGame } from '../actions/ui_actions'
 
 class Game extends React.Component {
@@ -13,7 +14,7 @@ class Game extends React.Component {
     return (
       <div className='App'>
         { this.props.showTitleScreen ? <TitleScreen startGame={this.props.startGame} />
-          : null }
+      : <SinglePlayerGame /> }
       </div>
     )
   }
