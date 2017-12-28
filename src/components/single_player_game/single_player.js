@@ -19,7 +19,7 @@ class SinglePlayerGame extends React.Component {
       console.log(res.questions)
       this.game = new Game(res.questions)
       this.setState({
-        currentQuestion: this.game.getQuestion().questionText,
+        currentQuestion: ReactHtmlParser(this.game.getQuestion().questionText),
         answerChoices: this.game.getQuestion().answerChoices
       })
     })
@@ -29,7 +29,7 @@ class SinglePlayerGame extends React.Component {
     return this.state.answerChoices.map((ac, idx) => {
       return (
         <li key={idx}>
-          <button>{ac}</button>
+          <button>{ReactHtmlParser(ac)}</button>
         </li>
       )
     })
