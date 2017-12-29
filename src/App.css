@@ -1,3 +1,27 @@
 .App {
   text-align: center;
 }
+
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.ac-button {
+  display: inline-block;
+  border: 1px solid white;
+  min-width: 40px;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.ac-button:hover {
+  background: white;
+  color: purple;
+}
+
+.ac-flash {
+  font-size: 24px;
+  color: pink;
+}

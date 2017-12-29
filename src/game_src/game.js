@@ -17,6 +17,11 @@ class Game {
   getQuestion () {
     return this.questions[this.indexNumber]
   }
+
+  checkAnswer (ac) {
+    console.log(ac);
+    return ac === this.questions[this.indexNumber].correctAnswer
+  }
 }
 
 export default Game

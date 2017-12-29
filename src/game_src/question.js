@@ -3,7 +3,6 @@ class Question {
     this.questionText = questionJSON.question
     this.correctAnswer = questionJSON.correct_answer
     this.wrongAnswers = questionJSON.incorrect_answers
-    console.log(this.wrongAnswers);
     this.answerChoices = this.shuffleArray(this.wrongAnswers.concat(this.correctAnswer))
   }
 
